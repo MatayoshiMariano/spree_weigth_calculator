@@ -1,7 +1,9 @@
+[![Code Climate](https://codeclimate.com/github/MatayoshiMariano/spree_weigth_calculator/badges/gpa.svg)](https://codeclimate.com/github/MatayoshiMariano/spree_weigth_calculator)
+
 SpreeWeigthCalculator
 =====================
 
-Introduction goes here.
+This is a calculator that calculates (cuak!) the shipping cost based on the weight, volume, price of the order and the sum of the width, height and depth. To do that we have created an end-point that calculate that for us.
 
 Installation
 ------------
@@ -18,6 +20,18 @@ Bundle your dependencies and run the installation generator:
 bundle
 bundle exec rails g spree_weigth_calculator:install
 ```
+
+Configuration
+----------
+The calculator has two preferences:
+
+1. URL
+
+   The preference `URL` is the endpoint. For example: `https://logistic.domain.com/cost`.
+
+The endpoint should be like:
+
+`https://logistic.domain.com/cost/#{zip}?volume=#{volume}&weight=#{weight}&dimension=#{dimension}`
 
 Testing
 -------
@@ -36,4 +50,8 @@ Simply add this require statement to your spec_helper:
 require 'spree_weigth_calculator/factories'
 ```
 
-Copyright (c) 2015 [name of extension creator], released under the New BSD License
+TODO
+----
+
+1.  Set the `weight`, `dimension` and `volume` as optional parameters in the URL.
+2.  Add some tests.
