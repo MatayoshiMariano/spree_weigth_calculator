@@ -2,16 +2,17 @@
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'spree_weigth_calculator'
-  s.version     = '3.0.1'
-  s.summary     = 'TODO: Add gem summary here'
-  s.description = 'TODO: Add (optional) gem description here'
+  s.version     = '3.0.3'
+  s.summary     = 'Calculator for spree'
+  s.description = 'This calculator use the endpoint provide by the user to calculate the shipping cost'
   s.required_ruby_version = '>= 2.0.0'
 
-  # s.author    = 'You'
-  # s.email     = 'you@example.com'
-  # s.homepage  = 'http://www.spreecommerce.com'
+  s.author    = "Mariano Matayoshi"
+  s.authors   = ['Mariano Matayoshi']
+  s.email     = 'matayoshi.mariano@gmail.com'
+  s.homepage  = 'https://github.com/MatayoshiMariano/spree_weigth_calculator'
 
-  #s.files       = `git ls-files`.split("\n")
+  s.files       = `git ls-files`.split("\n")
   #s.test_files  = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.require_path = 'lib'
   s.requirements << 'none'
